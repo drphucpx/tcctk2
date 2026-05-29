@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Nghiên Cứu Thực Tế: Đà Nẵng - Quảng Nam - Huế</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --accent-color: #e67e22;
+            --text-color: #333;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        header h2 {
+            color: var(--accent-color);
+            margin: 0 0 15px 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .tour-meta {
+            background-color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-weight: bold;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        h2.section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 35px;
+            font-size: 22px;
+        }
+
+        .day-container {
+            background: var(--secondary-color);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .day-title {
+            font-size: 18px;
+            color: #d35400;
+            margin-top: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .time-badge {
+            font-weight: bold;
+            color: var(--primary-color);
+            display: inline-block;
+            min-width: 90px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .price-table td {
+            font-weight: bold;
+            color: #c0392b;
+            font-size: 18px;
+        }
+
+        .grid-lists {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-lists {
+                grid-template-columns: 1fr;
+            }
+            .tour-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        ul.styled-list {
+            padding-left: 20px;
+        }
+
+        ul.styled-list li {
+            margin-bottom: 8px;
+        }
+
+        .note-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Chương Trình Nghiên Cứu Thực Tế</h1>
+        <h2>ĐÀ NẴNG - QUẢNG NAM – HUẾ</h2>
+        <p>CHÙA LINH ỨNG - RỪNG DỪA BẢY MẪU - PHỐ CỔ HỘI AN – BIỂN LĂNG CÔ</p>
+    </header>
+
+    <div class="tour-meta">
+        <div>⏱ Thời gian: 3 Ngày 2 Đêm (Từ 29/05 đến 31/05/2026)</div>
+        <div>🚌 Loại hình: Tour riêng</div>
+    </div>
+
+    <h2 class="section-title">📍 Lịch Trình Chi Tiết</h2>
+
+    <div class="day-container">
+        <div class="day-title">Ngày 1: Đồng Hới – Đà Nẵng – Gala Dinner (Bữa trưa, tối)</div>
+        <ul class="timeline">
+            <li><span class="time-badge">06h00:</span> Xe 1 đón đoàn tại Trường Chính Trị Lê Duẩn khởi hành về Quảng Trường Hồ Chí Minh.</li>
+            <li><span class="time-badge">06h15:</span> Đoàn nhập với xe 2 để làm lễ dâng hương tại đền Hồ Chí Minh (lễ đoàn tự chủ động phần lễ và liên hệ với BQL Đền). Sau đó chụp hình tại Quảng Trường.</li>
+            <li><span class="time-badge">07h00:</span> Đoàn khởi hành đi Đà Nẵng theo đường Quốc Lộ 1A.</li>
+            <li><span class="time-badge">11h30-12h00:</span> Đoàn đến Lăng Cô dùng bữa cơm trưa tại nhà hàng Anlagon trên đầm Lập An. Sau bữa trưa đoàn tiếp tục khởi hành đi Đà Nẵng.</li>
+            <li><span class="time-badge">Chiều:</span> Đến Đà Nẵng, đoàn nhận phòng khách sạn nghỉ ngơi theo giờ quy định nhận phòng của khách sạn.</li>
+            <li><span class="time-badge">15h00:</span> Đoàn tập trung tại xe di chuyển đến Học viện Chính Trị khu vực 3 Đà Nẵng.</li>
+            <li><span class="time-badge">15h30:</span> Đến học viện Chính Trị khu vực 3 Đà Nẵng, đoàn tự do chụp hình, tham quan trường và nghe báo cáo tình hình kinh tế - xã hội, quốc phòng, an ninh, phát triển du lịch của TP Đà Nẵng (theo chương trình đoàn làm việc với trường).</li>
+            <li><span class="time-badge">17h00-17h30:</span> Đoàn kết thúc lịch làm việc tại học viện, khởi hành đi về nhà hàng Galina view biển (Tại đây nếu có thời gian đoàn tự do vui chơi tham quan dạo biển).</li>
+            <li><span class="time-badge">18h30:</span> Đoàn bắt đầu vào tiệc Gala Dinner dưới sự hướng dẫn của MC, tham gia chương trình văn nghệ hát cho nhau nghe và cùng chơi các trò chơi vui nhộn do MC tổ chức.</li>
+            <li><span class="time-badge">22h00:</span> Đoàn về lại khách sạn, tự do tham quan thành phố Đà Nẵng về đêm.</li>
+        </ul>
+    </div>
+
+    <div class="day-container">
+        <div class="day-title">Ngày 2: Chùa Linh Ứng - Rừng Dừa Bảy Mẫu – Phố Cổ Hội An (Bữa sáng, trưa, tối)</div>
+        <ul class="timeline">
+            <li><span class="time-badge">06h00-07h30:</span> Đoàn tự do ăn sáng buffet tại khách sạn.</li>
+            <li><span class="time-badge">08h00:</span> Đoàn khởi hành tham quan nhà trưng bày Hoàng Sa trên đường Võ Nguyên Giáp. Tiếp đó đoàn tham quan chùa Linh Ứng tại Bán Đảo Sơn Trà. Mua sắm đặc sản làm quà cho người thân và gia đình.</li>
+            <li><span class="time-badge">11h00-11h30:</span> Đoàn tập trung ăn trưa tại nhà hàng Hồng Phúc Võ Nguyên Giáp. Sau bữa trưa đoàn về khách sạn nghỉ ngơi.</li>
+            <li><span class="time-badge">15h00:</span> Đoàn khởi hành đi vui chơi tại rừng dừa Bảy Mẫu. Đến nơi đoàn tham gia các hoạt động chèo thuyền thúng trên sông, giao lưu âm nhạc và xem biểu diễn thuyền thúng.</li>
+            <li><span class="time-badge">17h30:</span> Đoàn di chuyển về Phố cổ Hội An, ăn tối tại nhà hàng Hội An Golden Light. Sau bữa tối đoàn tự do đi tham quan và vui chơi tại Phố Cổ.</li>
+            <li><span class="time-badge">21h30:</span> Đoàn về lại khách sạn nghỉ ngơi. 
+                <div class="note-box" style="margin-top: 5px; padding: 8px 12px;">
+                    * Hoặc về sớm hơn tuỳ vào quyết định của đoàn để xem bắn pháo hoa. <strong>Lưu ý:</strong> Đêm này mật độ tham gia giao thông rất đông nên có xe lưu thông chậm và chịu sự phân luồng theo sự phân công của chính quyền.
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="day-container">
+        <div class="day-title">Ngày 3: Đà Nẵng – Biển Lăng Cô - Huế - Đồng Hới (Bữa sáng, trưa)</div>
+        <ul class="timeline">
+            <li><span class="time-badge">06h30-08h25:</span> Đoàn tự do ăn sáng buffet tại khách sạn; tự do nghỉ ngơi.</li>
+            <li><span class="time-badge">08h30:</span> Đoàn làm thủ tục trả phòng khách sạn.</li>
+            <li><span class="time-badge">09h00:</span> Đoàn khởi hành đi Huế. Trên đường đi đoàn dừng chân ghé tham quan bãi biển Lăng Cô, tại đây đoàn tự do nghỉ ngơi và chụp hình. Tiếp tục đi Huế.</li>
+            <li><span class="time-badge">11h30-12h00:</span> Đoàn dùng bữa trưa tại nhà hàng Không Gian Xưa Điện Biên Phủ sau đó tiếp tục về lại Đồng Hới.</li>
+            <li><span class="time-badge">Chiều:</span> Trên đường thuận tiện sẽ dừng chân cho đoàn mua sắm đặc sản hoặc ngắm cảnh sông Hương. Tiếp tục về lại Đồng Hới. Buổi chiều tối đoàn đến điểm đón ban đầu. Kết thúc hành trình.</li>
+        </ul>
+    </div>
+
+    <h2 class="section-title">💰 Bảng Giá Tour (Áp dụng cho đoàn từ 82 khách trở lên)</h2>
+    <table class="price-table">
+        <thead>
+            <tr>
+                <th>Khách Sạn Lựa Chọn</th>
+                <th>Giá Tour / Khách</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>KHÁCH SẠN PHỐ SAMDI 4 SAO (Đường Nguyễn Văn Linh, TP. Đà Nẵng)</td>
+                <td>3.460.000 Đ</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="grid-lists">
+        <div>
+            <h2 class="section-title">✅ Giá Tour Bao Gồm</h2>
+            <ul class="styled-list">
+                <li><strong>Phương tiện:</strong> 2 xe 45 chỗ tiêu chuẩn du lịch phục vụ suốt chương trình.</li>
+                <li><strong>Lưu trú:</strong> Khách sạn tiêu chuẩn 4 sao (2 khách/phòng; lẻ nam/lẻ nữ ghép 3). Tiêu chuẩn phòng đơn đối với trưởng đoàn. Phụ thu phòng khách sạn đêm bắn Pháo Hoa.</li>
+                <li><strong>Hướng dẫn viên:</strong> 2 HDV kinh nghiệm, nhiệt tình, vui vẻ phục vụ suốt tuyến.</li>
+                <li><strong>Bảo hiểm:</strong> Bảo hiểm du lịch với mức đền bù tối đa 60,000,000 đồng/người/vụ.</li>
+                <li><strong>Nước uống:</strong> Nước suối du lịch 2 chai 0,5 lít/khách/ngày.</li>
+                <li><strong>Ăn uống:</strong> 
+                    <ul>
+                        <li>2 bữa sáng buffet tại khách sạn.</li>
+                        <li>5 bữa chính bao gồm: 03 bữa chính tại nhà hàng tiêu chuẩn 160.000đ/suất + 1 bữa Gala Dinner tiêu chuẩn 300.000đ/suất + 1 bữa chính 180.000đ/khách tại Đầm Lập An.</li>
+                    </ul>
+                </li>
+                <li><strong>Đêm Gala Dinner:</strong> MC chuyên nghiệp, âm thanh, sân khấu, màn hình LED và nhân viên kỹ thuật phục vụ.</li>
+                <li><strong>Tham quan:</strong> Vé và thuyền thúng tại rừng dừa Bảy Mẫu.</li>
+                <li><strong>Thuế:</strong> Thuế VAT.</li>
+                <li><strong>Quà tặng:</strong> Mũ du lịch cho toàn đoàn, thiết kế maket đêm Gala, băng rôn treo xe.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="section-title">❌ Giá Tour Không Bao Gồm</h2>
+            <ul class="styled-list">
+                <li>Chi phí cá nhân và các chi phí khác ngoài chương trình.</li>
+                <li>Các đồ uống bia rượu, nước ngọt,… ngoài trà đá đã chuẩn bị sẵn.</li>
+                <li>Các phần quà trong đêm Gala (nếu có).</li>
+                <li>Tiền bồi dưỡng cho nhân viên phục vụ (tự nguyện).</li>
+                <li>Vé xe điện và vé tham quan phố cổ Hội An.</li>
+            </ul>
+
+            <h2 class="section-title">👶 Quy Định Đối Với Trẻ Em</h2>
+            <ul class="styled-list">
+                <li><strong>Dưới 5 tuổi:</strong> Miễn phí. Mọi chi phí phát sinh bố mẹ tự thanh toán cho bé.</li>
+                <li><strong>Từ 6 – 9 tuổi:</strong> (Cao từ 0,9m – 1,2m): Tính 60% giá tour, ăn suất riêng.</li>
+                <li><strong>Từ 10 tuổi trở lên:</strong> (Cao từ 1,3m trở lên): Tính giá như người lớn.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-title">⚠️ Lưu Ý Quan Trọng</h2>
+    <ul class="styled-list">
+        <li>Trang phục phù hợp cho việc đi tham quan học tập và dâng hương.</li>
+        <li>Chương trình có thể điều chỉnh thời gian cho phù hợp với tình hình thực tế nhưng vẫn đảm bảo đầy đủ các điểm tham quan.</li>
+        <li>Thời gian đoàn đi là giai đoạn cao điểm cuối tuần và đặc biệt có sự kiện <strong>bắn pháo hoa</strong> nên lịch trình có thể điều chỉnh linh động để bảo đảm chương trình tốt nhất cho đoàn.</li>
+        <li>Xe lớn và đoàn đông nên các thành viên trong đoàn chú ý đến thời gian sinh hoạt chung để tránh ảnh hưởng đến tập thể.</li>
+        <li class="note-box">
+            <strong>Quy định về khách sạn Samdi (Đường Nguyễn Văn Linh):</strong><br>
+            - Có quy định cấm đường vào các khung giờ: <strong>10h30 - 12h00</strong> và <strong>16h30 - 19h00</strong> nên công ty sẽ sắp xếp lịch di chuyển linh động.<br>
+            - Giờ nhận phòng: sau 14h00 | Giờ trả phòng: trước 12h00.<br>
+            <em>Mong sự thông cảm và phối hợp nhiệt tình của các thành viên trong đoàn!</em>
+        </li>
+    </ul>
+
+    <footer>
+        ✨ CHÚC QUÝ KHÁCH CÓ CHUYẾN THAM QUAN THÚ VỊ ! ✨
+    </footer>
+</div>
+
+</body>
+</html>
